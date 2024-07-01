@@ -17,7 +17,6 @@ Fusion provides:
 - dto
 - middleware
 - reccomends principle `code should be its own documentation`
-- gives built in solutions like typeorm
 made by programmers for programmers.
 
 ## Example use
