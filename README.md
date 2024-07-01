@@ -3,7 +3,7 @@
 ![fusion logo](./readme/img/logo_bg.jpg)
 
 ## contents
-- [why Fusion][#Why-Fusion]
+- [why Fusion](#why-fusion)
 - [example use](#example-use)
 - [documentation](./readme/README.md)
 - [how contribute](./readme/contribution.README.md)
