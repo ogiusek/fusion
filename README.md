@@ -1,6 +1,6 @@
 # Fusion
 
-![fusion logo](./readme/img/logo_bg.png)
+![fusion logo](./readme/img/logo_bg.jpg)
 
 ## contents
 - [why Fusion][#Why Fusion]
