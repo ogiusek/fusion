@@ -40,6 +40,6 @@ Routes::add("/", Method::POST, function(myDto $dto){
   return new Response($json, status: 200, type: Content::JSON);
 });
 ```
-For deep explanation go to [documentation](./readme/README.md)
+For deep explanation and more software go to [documentation](./readme/README.md)
 ## Authors
 - [@ogius](https://www.github.com/ogiusek)
