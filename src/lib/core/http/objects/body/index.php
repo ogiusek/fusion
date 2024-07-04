@@ -1,12 +1,23 @@
 <?php namespace core\http;
-require_once "interface.php";
+require_once __DIR__."/interface.php";
 
 class Body implements IBody {
-  private string $body;
-
   public function __construct(
-    string $body = ""
+    private string $body = ""
   ){
-    $this->body = $body;
+  }
+
+  public function text(): string {
+    return $this->body;
+  }
+
+  public function is_json(): bool {
+    return json_decode($this->body, true) !== null;
+  }
+
+  public function json(): array {
+    if(!$this->is_json())
+      throw new \Exception("body is not json");
+    return json_decode($this->body);
   }
 }

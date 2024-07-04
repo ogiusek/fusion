@@ -1,7 +1,7 @@
 <?php namespace core\http;
 
-require_once "body/index.php";
-require_once "headers/index.php";
-require_once "method/index.php";
-require_once "status/index.php";
-require_once "url/index.php";
+require_once __DIR__."/body/index.php";
+require_once __DIR__."/headers/index.php";
+require_once __DIR__."/method/index.php";
+require_once __DIR__."/status/index.php";
+require_once __DIR__."/url/index.php";
