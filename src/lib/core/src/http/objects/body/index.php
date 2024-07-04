@@ -20,4 +20,8 @@ class Body implements IBody {
       throw new \Exception("body is not json");
     return json_decode($this->body);
   }
+
+  public function __tostring(): string {
+    return $this->body;
+  }
 }

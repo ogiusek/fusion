@@ -9,7 +9,11 @@ class Res implements IRes {
   ) {}
   
   public function run(): void{
-    // TODO
+    http_response_code($this->status->value);
+    foreach ($this->headers as $key => $value) {
+      header("$key: $value");
+    }
+    echo $this->body;
   } 
 
 }
