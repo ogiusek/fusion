@@ -1,1 +1,1 @@
-<?php require_once "src/index.php";
+<?php require_once __DIR__."/src/index.php";
