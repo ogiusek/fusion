@@ -10,7 +10,7 @@ class Res implements IRes {
   
   public function run(): void{
     http_response_code($this->status->value);
-    foreach ($this->headers as $key => $value) {
+    foreach ($this->headers->get_headers() as $key => $value) {
       header("$key: $value");
     }
     echo $this->body;
