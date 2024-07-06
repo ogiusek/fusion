@@ -3,8 +3,9 @@ discarded
 .env
 env.php
 
-
 vendor
 
-
 .phpunit.result.cache
+
+index.php
+.htaccess
