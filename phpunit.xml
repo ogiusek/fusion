@@ -4,11 +4,7 @@
   bootstrap="src/index.php"
 >
   <testsuites>
-    <testsuite name="Library tests">
-      <directory>src</directory>
-    </testsuite>
-
-    <testsuite name="application tests">
+    <testsuite name="fusion core tests">
       <directory>tests</directory>
     </testsuite>
   </testsuites>
