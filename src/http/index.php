@@ -1,4 +1,4 @@
-<?php namespace core\http;
+<?php namespace fusion\http;
 
 require_once("objects/index.php");
 require_once("req/index.php");

@@ -1,4 +1,4 @@
-<?php namespace core\http;
+<?php namespace fusion\http;
 
 interface IBody {  
   public function __construct(

@@ -1,4 +1,4 @@
-<?php namespace core\http;
+<?php namespace fusion\http;
 require_once __DIR__."/interface.php";
 
 class Headers implements IHeaders {

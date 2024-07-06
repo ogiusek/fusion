@@ -1,4 +1,4 @@
-<?php namespace core\http;
+<?php namespace fusion\http;
 
 enum Method: string {
   case GET = "GET";

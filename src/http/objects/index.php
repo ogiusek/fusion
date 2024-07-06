@@ -1,4 +1,4 @@
-<?php namespace core\http;
+<?php namespace fusion\http;
 
 require_once __DIR__."/body/index.php";
 require_once __DIR__."/headers/index.php";

@@ -1,4 +1,4 @@
-<?php namespace core\http;
+<?php namespace fusion\http;
 
 interface IHeaders {
   public function __construct(
