@@ -1,0 +1,14 @@
+{
+    "name": "ogius/fusion",
+    "description": "TODO",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ogius\\Fusion\\": "src/"
+        }
+    },
+    "require": {}
+}
