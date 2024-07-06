@@ -1,6 +1,6 @@
 {
     "name": "ogius/fusion",
-    "description": "TODO",
+    "description": "Fusion is optimal, lightweight and easy to use framework for routing. Fusion is focusing on dto for easy user input validation.",
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "^11.2"
