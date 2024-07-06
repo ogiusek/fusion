@@ -10,7 +10,7 @@ class ResTest extends \PHPUnit\Framework\TestCase {
     $output = ob_get_clean();
     $this->assertEquals($output, $body->text());
   }
-  
+
   public function test_running_status() {
     $res = new Res(
       status: $status = Status::ACCEPTED
@@ -21,10 +21,6 @@ class ResTest extends \PHPUnit\Framework\TestCase {
   }
 
   // public function test_headers() {
-  //   cannot check headers in tests
-  //   $res = new Res(
-  //     headers: new Headers($headers = ["absurd" => "header"]),
-  //   );
-  //   $res->run();
+  //   cannot check headers in tests because headers_list() returns empty array
   // }
 }
