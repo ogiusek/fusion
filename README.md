@@ -23,7 +23,7 @@ made by programmers for programmers.
 ## Examples
 ### Dto
 ```php
-<?php use core\{dto_provider, dto_validator};
+<?php use fusion\{dto_provider, dto_validator};
 class myDto{
   #[dto_provider\body("email")] // provider
   #[dto_validator\not_empty, dto_validator\email] // validators
@@ -32,7 +32,7 @@ class myDto{
 ```
 ### Controller
 ```php
-<?php use core\{Routes, Response, Content, Method};
+<?php use fusion\{Routes, Response, Content, Method};
 // Remember to define dto
 Routes::add("/", Method::POST, function(myDto $dto){
   $json = json_encode(["messeage" => "success"]);

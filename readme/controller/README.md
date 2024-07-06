@@ -3,7 +3,7 @@
 ### Route
 `src/my_file.php`
 ```php
-<?php use core\{Routes, Response, Method, Content};
+<?php use fusion\{Routes, Response, Method, Content};
 // remember to define dto
 Routes::add("/", Method::POST, function(myDto $dto){
   $json = json_encode(["messeage" => "success"]);
@@ -13,7 +13,7 @@ Routes::add("/", Method::POST, function(myDto $dto){
 ```
 ### Test
 ```php
-<?php use core\{Method, Routes, Request};
+<?php use fusion\{Method, Routes, Request};
 $request
 $response = Routes::request(new Request(...)); // change way to pass request content
 Routes::test("/", Method::POST, ["email" => "myEmail@gmail.com"], function($response){
@@ -30,7 +30,7 @@ To help choose i redirect to [ideas page](./ideas.README.md)
 #### Example route
 `src/routes/POST.php`
 ```php
-<?php use core\{dto_provider, dto_validator, Response, Content, Controller};
+<?php use fusion\{dto_provider, dto_validator, Response, Content, Controller};
 // Define dto
 class myDto{
   #[dto_provider\body("email")] // provider

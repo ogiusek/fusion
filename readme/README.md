@@ -33,7 +33,7 @@
 default way to add route
 `src/my_file.php`
 ```php
-<?php use core\{dto, Routes, Method, Response, Content};
+<?php use fusion\{dto, Routes, Method, Response, Content};
 class myDto{
   #[dto\body("email")]
   #[dto\email, dto\not_empty]
@@ -53,7 +53,7 @@ Routes::test("/", Method::POST, ["email" => "myEmail@gmail.com"], function($resp
   return $works;
 });
 
-use core\Request;
+use fusion\Request;
 Routes::add_middleware("/", methods: [Method::POST, Method::PATCH], action: function(myDto $request){
   // return response if you want to overwrite
 });
@@ -63,7 +63,7 @@ Routes::test_middleware("/", methods: [Method::POST, Method::PATCH]);
 advanced and reccomended way to add route
 `src/routes/post.php`
 ```php
-<?php use core\{dto, Response, Content, Controller};
+<?php use fusion\{dto, Response, Content, Controller};
 class myDto{
   #[dto\body("email")]
   #[dto\isEmail, dto\notEmpty]
@@ -83,9 +83,9 @@ return new class extends Controller {
 consider changing name. this is for adding controllers librarys like from files.
 ```php
 <?php
-core\Routes::add_provider(function (Request $request){
+fusion\Routes::add_provider(function (Request $request){
   // if provider has controller for request 
-  return new core\Response(...);
+  return new fusion\Response(...);
   // else
   // do not return enything
 });

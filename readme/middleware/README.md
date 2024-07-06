@@ -1,7 +1,7 @@
 # Middleware
 ## How add middleware
 ```php
-<?php use core\{Routes, Method};
+<?php use fusion\{Routes, Method};
 // remember to define myDto
 Routes::add_middleware("/", methods: [Method::POST, Method::PATCH], action: function(myDto $request){
   // return response if you want to overwrite
@@ -10,7 +10,7 @@ Routes::add_middleware("/", methods: [Method::POST, Method::PATCH], action: func
 
 ## How test middleware
 ```php
-<?php use core\{Routes, Method, Request};
+<?php use fusion\{Routes, Method, Request};
 // remember to define myDto
 $my_request = new Request(...);
 Routes::test_middleware("/", $my_request, function(mixed $response){

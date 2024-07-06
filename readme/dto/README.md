@@ -74,7 +74,7 @@ object validators:
 
 `src/routes/GET.php`
 ```php
-<?php use core\{dto_provider, dto_validator};
+<?php use fusion\{dto_provider, dto_validator};
 class myDto{
   #[dto_provider\body("email")] // provider
   #[dto_validator\email, dto_validator\not_empty] // validators
