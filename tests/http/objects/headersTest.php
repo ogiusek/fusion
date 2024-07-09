@@ -6,14 +6,14 @@ class HeadersTest extends \PHPUnit\Framework\TestCase {
     $this->assertTrue(true);
   }
   
-  public function test_init_with_array() {
+  public function test_init_error_throws_with_array() {
     $this->expectException(\Exception::class);
-    $headers = new Headers(["a", "b"]);
+    new Headers(["a", "b"]);
   }
-
-  public function test_init_with_wrong_value() {
+  
+  public function test_init_error_throws_with_wrong_value() {
     $this->expectException(\Exception::class);
-    $headers = new Headers(["a" => []]);
+    new Headers(["a" => []]);
   }
 
   public function test_get_headers() {
