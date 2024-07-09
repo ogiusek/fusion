@@ -9,6 +9,5 @@
     "psr-4": {
       "Ogius\\Fusion\\": "src/"
     }
-  },
-  "require": {}
+  }
 }
