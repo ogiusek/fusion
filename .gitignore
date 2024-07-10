@@ -1,11 +1,11 @@
 discarded
 
-.env
-env.php
+/.env
+/env.php
 
-vendor
+/vendor
 
-.phpunit.result.cache
+/.phpunit.result.cache
 
-index.php
-.htaccess
+/index.php
+/.htaccess
