@@ -4,7 +4,7 @@ require_once __DIR__."/interface.php";
 trait SearchParams{
   private $search_params = "";
   
-  private function initSearchParams(string $search_params = "") {
+  private function set_search_params(string $search_params = "") {
     if (strpos($search_params, '/') !== false || strpos($search_params, '?') !== false || !empty(parse_url($search_params, PHP_URL_QUERY)))
       throw new \InvalidArgumentException("Invalid search params: '/' or '?' are not allowed, and query string is not permitted.");
 

@@ -3,7 +3,7 @@
 final class UrlTested implements IUrl{
   use Url;
   function __construct(string $url){
-    $this->initUrl($url);
+    $this->set_url($url);
   }
 }
 

@@ -4,7 +4,7 @@ class SearchParamsTested implements ISearchParams {
   use SearchParams;
 
   function __construct(string $url){
-    $this->initSearchParams($url);
+    $this->set_search_params($url);
   }
 }
 
