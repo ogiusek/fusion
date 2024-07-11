@@ -5,7 +5,7 @@ require_once __DIR__."/interface.php";
  * this url is used for requests
  */
 class Url implements IReqUrl {
-  use traits\Url, traits\SearchParams;
+  use traits\UrlPath, traits\SearchParams;
 
   function __construct(
     string $url = "/"
