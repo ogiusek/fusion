@@ -2,7 +2,7 @@
 require_once __DIR__."/interface.php";
 
 class Headers implements IHeaders {
-  public function __construct(
+  function __construct(
     private array $headers = []
   ) {
     foreach ($headers as $key => $value) {
@@ -11,10 +11,10 @@ class Headers implements IHeaders {
     }
   }
 
-  public function get_headers(): array{
+  function get_headers(): array{
     return $this->headers;
   }
-  public function get_header(string $key): ?string{
+  function get_header(string $key): ?string{
     return $this->headers[$key] ?? null;
   }
 }
