@@ -1,7 +1,7 @@
 <?php namespace fusion\http\traits;
 require_once __DIR__."/interface.php";
 
-trait Url{
+trait UrlPath{
   private string $url = "/";
   
   final function get_url(): string{ return $this->url; }

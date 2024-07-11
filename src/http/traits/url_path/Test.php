@@ -1,7 +1,7 @@
 <?php namespace fusion\http\traits;
 
-final class UrlTested implements IUrl{
-  use Url;
+final class UrlTested implements IUrlPath{
+  use UrlPath;
   function __construct(string $url){
     $this->set_url($url);
   }
