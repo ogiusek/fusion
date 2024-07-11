@@ -13,7 +13,7 @@ class Url implements IReqUrl {
     $split_character = "?";
     $parts = explode($split_character, $url, 2);
     [$url, $search_params] = [$parts[0], $parts[1] ?? ""];
-    $this->initUrl($url);
-    $this->initSearchParams($search_params);
+    $this->set_url($url);
+    $this->set_search_params($search_params);
   }
 }
