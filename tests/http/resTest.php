@@ -1,7 +1,7 @@
 <?php namespace fusion\http;
 
 class ResTest extends \PHPUnit\Framework\TestCase {
-  public function test_running_body() {
+  function test_running_body() {
     $res = new Res(
       body: $body = new Body("output"),
     );
@@ -11,7 +11,7 @@ class ResTest extends \PHPUnit\Framework\TestCase {
     $this->assertEquals($output, $body->text());
   }
 
-  public function test_running_status() {
+  function test_running_status() {
     $res = new Res(
       status: $status = Status::ACCEPTED
     );
@@ -20,7 +20,7 @@ class ResTest extends \PHPUnit\Framework\TestCase {
     $this->assertEquals($output_status, $status->value);
   }
 
-  // public function test_headers() {
+  // function test_headers() {
   //   cannot check headers in tests because headers_list() returns empty array
   // }
 }
