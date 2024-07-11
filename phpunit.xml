@@ -5,7 +5,7 @@
 >
   <testsuites>
     <testsuite name="fusion core tests">
-      <directory>tests</directory>
+      <directory>src</directory>
     </testsuite>
   </testsuites>
 </phpunit>
