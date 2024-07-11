@@ -1,10 +1,10 @@
 <?php namespace fusion\router\traits;
-use fusion\http\traits\IUrl;
+use fusion\http\traits\IUrlPath;
 
 class UrlWildcardTested {
   use UrlWildcard;
 
-  static function test(IUrl $self_url, IUrl $compared_url) {
+  static function test(IUrlPath $self_url, IUrlPath $compared_url) {
     return self::format_url_wildcards_to_match_instruction($self_url, $compared_url);
   }
 };
