@@ -10,7 +10,7 @@ final class UrlPath implements IUrlPath{
   
   function get_url(): string{ return $this->url; }
   function set_url(string $url = "/"): void{
-    $url_regex = "/^[a-zA-Z0-9-._~%!$&'()*+,;=:@\/]+$/";
+    static $url_regex = "/^[a-zA-Z0-9-._~%!$&'()*+,;=:@\/]+$/";
     $url = "/" . trim($url, "/");
     if(!preg_match($url_regex, $url))
       throw new \InvalidArgumentException("invalid url path");
